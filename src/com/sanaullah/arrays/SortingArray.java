@@ -32,4 +32,15 @@ public class SortingArray {
         }
         return givenArray;
     }
+
+    public int findMissingNumberInArray(int[] givenArray){
+        int missingElement =-1;
+        for (int i = 0; i < givenArray.length; i++) {
+            if(givenArray[i] != i+1){
+                missingElement = givenArray[i];
+                return missingElement;
+            }
+        }
+        return missingElement;
+    }
 }
