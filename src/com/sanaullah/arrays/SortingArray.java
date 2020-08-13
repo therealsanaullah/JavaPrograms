@@ -3,7 +3,7 @@ package com.sanaullah.arrays;
 
 
 /**
- * @author Saanaullah
+ * @author Sanaullah
  */
 public class SortingArray {
 
