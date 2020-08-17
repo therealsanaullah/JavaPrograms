@@ -33,14 +33,27 @@ public class SortingArray {
         return givenArray;
     }
 
-    public int findMissingNumberInArray(int[] givenArray){
-        int missingElement =-1;
+    public int findMissingNumberInArray(int[] givenArray) {
+        int missingElement = -1;
         for (int i = 0; i < givenArray.length; i++) {
-            if(givenArray[i] != i+1){
+            if (givenArray[i] != i + 1) {
                 missingElement = givenArray[i];
                 return missingElement;
             }
         }
         return missingElement;
     }
+
+
+    public void printRepeating(int[] arr) {
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[Math.abs(arr[i])] >= 0)
+                arr[Math.abs(arr[i])] = -arr[Math.abs(arr[i])];
+            else
+                System.out.print(Math.abs(arr[i]) + " ");
+        }
+    }
+
+
 }

@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class Utils {
     public static int[] array = {32, 3, 4, 41, 23, 43, 56, 1};
     public static int[] elementArray = {1,2,3,4,5,6,7,8,9,10,12};
-    public static int[] arrayWithDuplicates = {32, 3, 4, 41, 23, 43, 56, 1, 4};
+    public static int[] arrayWithDuplicates = {1, 2, 3, 1, 3, 6, 6};
 
     public static String convertArrayToString(int[] array) {
         return Arrays.toString(array);
