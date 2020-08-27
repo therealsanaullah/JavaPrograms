@@ -21,8 +21,8 @@ public class SortingArray {
 
     public int[] sortArrayInDescendingOrder(int[] givenArray) {
         for (int i = 0; i < givenArray.length; i++) {
-            for (int j = 0; j < givenArray.length; j++) {
-                if (givenArray[i] > givenArray[j]) {
+            for (int j = i+1; j < givenArray.length; j++) {
+                if (givenArray[i] < givenArray[j]) {
 
                     int temp = givenArray[i];
                     givenArray[i] = givenArray[j];
@@ -46,7 +46,6 @@ public class SortingArray {
 
 
     public void printRepeating(int[] arr) {
-
         for (int i = 0; i < arr.length; i++) {
             if (arr[Math.abs(arr[i])] >= 0)
                 arr[Math.abs(arr[i])] = -arr[Math.abs(arr[i])];
